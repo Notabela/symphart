@@ -21,6 +21,7 @@ SymphArt Articles
                 <tr>
                     <td>{{ article.title }}</td>
                     <td><a href="/article/{{ article.id }}" class="btn btn-dark">Show</a>
+                    <td><a href="/article/edit/{{ article.id }}" class="btn btn-light">Edit</a>
                     <td><a href="#" class="btn btn-danger delete-article" data-id="{{ article.id }}" onclick="deleteArticle({{ article.id }})">Delete</a>
                 </tr>
             {% endfor %}
